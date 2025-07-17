@@ -1,0 +1,15 @@
+import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
+import { Sidenav } from "../../../core/sidenav/sidenav";
+
+
+@Component({
+  selector: 'app-inventory-pages',
+  imports: [Sidenav],
+  templateUrl: './inventory-pages.html',
+  styleUrl: './inventory-pages.css'
+})
+
+export class InventoryPages {
+
+}
