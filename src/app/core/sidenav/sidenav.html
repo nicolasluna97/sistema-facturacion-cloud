@@ -1,16 +1,84 @@
 <div class="sidenav-container">
     <div class="button-section-1">
-    <button class= "sidenav-button">Vender</button>
-    <button class= "sidenav-button" routerLink="inventory"> Inventario </button>
-    <button class= "sidenav-button">Movimientos</button>
-    <button class= "sidenav-button">Estadisticas</button>
+        <button class="sidenav-button" 
+        routerLink="/"
+        routerLinkActive="active-b"
+        [routerLinkActiveOptions]="{exact: true}">
+        <span class="material-symbols-outlined">
+        home
+        </span>
+        <span class="btn-text">Inicio</span>
+    </button>
+
+    <button class= "sidenav-button" 
+        routerLink="/sales"
+        routerLinkActive="active-b"
+        [routerLinkActiveOptions]="{exact: true}">
+        <span class="material-symbols-outlined">
+        shoppingmode
+        </span>
+        <span>
+            Vender
+        </span>
+    </button>
+
+    <button class= "sidenav-button" 
+        routerLink="/inventory" 
+        routerLinkActive="active-b"
+        [routerLinkActiveOptions]="{exact: true}"> 
+        <span class="material-symbols-outlined">
+        inventory_2</span>
+        <span>Inventario</span>
+    </button>
+    
+    <button class= "sidenav-button"
+        routerLink="/history"
+        routerLinkActive="active-b"
+        [routerLinkActiveOptions]="{exact: true}"> 
+        <span class="material-symbols-outlined">
+        history
+        </span>
+        <span>Movimientos</span>
+    </button>
+    
+    <button class= "sidenav-button"
+        routerLink="/statistics"
+        routerLinkActive="active-b"
+        [routerLinkActiveOptions]="{exact: true}">
+        <span class="material-symbols-outlined">
+        bar_chart
+        </span>
+        <span>
+        Estadisticas
+        </span>
+    </button>
+
+
     </div>
 
     <div class="button-section-2">
         <h1 class="title">Gestión de Contactos</h1>
-        <button class="sidenav-button">Clientes</button>
-        <button class="sidenav-button">Proveedores</button>
-        <button class="sidenav-button">Cerrar Sesión</button>
-        <button class="sidenav-button">Póliticas de Sevicio</button>
+    
+    <button class="sidenav-button">
+        <span class="material-symbols-outlined">
+        group
+        </span>
+        <span>Clientes</span>
+    </button>
+    
+    <button class="sidenav-button">
+        <span class="material-symbols-outlined">
+        delivery_truck_speed
+        </span>
+        <span>Proveedores</span>        
+    </button>
+              
+    <button class="sidenav-button">
+        <span class="material-symbols-outlined">
+        quick_reference_all
+        </span>
+        <span>Póliticas de Sevicio</span>
+    </button>
+
     </div>
 </div>

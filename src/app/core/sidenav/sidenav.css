@@ -7,7 +7,7 @@
   top: 0;
   transition: width 0.3s ease;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); 
-  margin: 20px 5px 5px 5px;
+  margin: 65px 5px 5px 5px;
   
   @media (max-width: 768px) {
     width: 150px;
@@ -42,17 +42,13 @@
   cursor: pointer;
   text-decoration: none;
   transition: background-color 0.2s ease;
+  gap: 5px;
 
   
   &:hover {
-    background-color:#baeaff;
+    background-color:#d4f1ff;
   }
-
-  
-  &.active {
-    background-color:#b3e5fc;
-  }
-
+ 
   
   .btn-icon {
     margin-right: 10px;
@@ -62,10 +58,22 @@
   .btn-text {
     word-break: break-word;
   }
- 
+  
+  &:active{
+  background-color: #73f1ff;
+  transform: scale(0.95);
+}
+  &.active-b{
+  background-color: #a0f5ff;
+   font-weight: bold;
 }
 
- .title {
+
+
+
+}
+
+.title {
     font-size: 1.1rem;
     margin: 1px 2px 25px 17px;
   }
