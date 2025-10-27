@@ -9,7 +9,7 @@
     <!-- Form -->
     <form class="login-form"
     [formGroup]="loginForm"
-    (ngsubmit)="onSubmit()">
+    (ngSubmit)="onSubmit()">
       <!-- Email Field -->
       <div class="form-group">
         <label for="email" class="form-label">
@@ -17,10 +17,10 @@
           Correo Electrónico
         </label>
         <input 
-          type="email" 
-          id="email" 
+          type="text" 
           class="form-input" 
           placeholder="tu@email.com"
+          formControlName="email"
           required
         >
       </div>
@@ -33,12 +33,19 @@
         </label>
         <input 
           type="password" 
-          id="password" 
           class="form-input" 
           placeholder="••••••••"
           required
+          formControlName="password"
         >
       </div>
+    <!-- Submit Button -->
+      <button 
+        type="submit" 
+        class="login-button button-icon">
+          Ingresar
+      </button>
+      </form>
 
       <!-- Remember Me & Forgot Password -->
       <div class="form-options">
@@ -50,13 +57,7 @@
         <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
       </div>
 
-      <!-- Submit Button -->
-      <button type="submit" 
-      class="login-button">
-      <span class="button-icon"></span>
-        Ingresar
-      </button>
-    </form>
+
 
     <div class="login-footer2">
       ¿No tienes cuenta?
@@ -73,7 +74,6 @@
     class="button-icon">
     Registrarse
     </span>
-
     </div>
   </div>
 </div>
