@@ -1,0 +1,79 @@
+<div class="login-container">
+  <div class="login-card">
+    <!-- Header -->
+    <div class="login-header">
+      <div class="login-icon">🔐</div>
+      <h1 class="login-title">Iniciar Sesión</h1>
+    </div>
+
+    <!-- Form -->
+    <form class="login-form"
+    [formGroup]="loginForm"
+    (ngsubmit)="onSubmit()">
+      <!-- Email Field -->
+      <div class="form-group">
+        <label for="email" class="form-label">
+          <span class="label-icon">📧</span>
+          Correo Electrónico
+        </label>
+        <input 
+          type="email" 
+          id="email" 
+          class="form-input" 
+          placeholder="tu@email.com"
+          required
+        >
+      </div>
+
+      <!-- Password Field -->
+      <div class="form-group">
+        <label for="password" class="form-label">
+        <span class="label-icon">🔒</span>
+          Contraseña
+        </label>
+        <input 
+          type="password" 
+          id="password" 
+          class="form-input" 
+          placeholder="••••••••"
+          required
+        >
+      </div>
+
+      <!-- Remember Me & Forgot Password -->
+      <div class="form-options">
+        <label class="remember-me">
+        <input type="checkbox" class="checkbox">
+        <span class="checkmark"></span>
+          Recordarme
+        </label>
+        <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit" 
+      class="login-button">
+      <span class="button-icon"></span>
+        Ingresar
+      </button>
+    </form>
+
+    <div class="login-footer2">
+      ¿No tienes cuenta?
+    </div>
+    
+    <div 
+    type="submit"
+    class="login-footer"
+    routerLink="/auth/register"
+    routerLinkActive="active-b"
+    [routerLinkActiveOptions]="{exact: true}">
+  
+    <span
+    class="button-icon">
+    Registrarse
+    </span>
+
+    </div>
+  </div>
+</div>

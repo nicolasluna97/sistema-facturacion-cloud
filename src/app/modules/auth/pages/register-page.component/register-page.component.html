@@ -1,0 +1,99 @@
+<div class="login-container">
+  <div class="login-card">
+    <!-- Header -->
+    <div class="login-header">
+      <div class="login-icon">👤</div>
+      <h1 class="login-title">Crear Cuenta</h1>
+      <p class="login-subtitle">Regístrate para comenzar</p>
+    </div>
+
+    <!-- Form -->
+    <form class="login-form">
+      <!-- Nombre Completo -->
+      <div class="form-group">
+        <label for="fullName" class="form-label">
+          <span class="label-icon">👤</span>
+          Usuario
+        </label>
+        <input 
+          type="text" 
+          id="fullName" 
+          class="form-input" 
+          placeholder="Nombre de Usuario"
+          required
+        >
+      </div>
+
+      <!-- Email Field -->
+      <div class="form-group">
+        <label for="email" class="form-label">
+          <span class="label-icon">📧</span>
+          Correo Electrónico
+        </label>
+        <input 
+          type="email" 
+          id="email" 
+          class="form-input" 
+          placeholder="tu@email.com"
+          required
+        >
+      </div>
+
+      <!-- Password Field -->
+      <div class="form-group">
+        <label for="password" class="form-label">
+          <span class="label-icon">🔒</span>
+          Contraseña
+        </label>
+        <input 
+          type="password" 
+          id="password" 
+          class="form-input" 
+          placeholder="••••••••"
+          required
+        >
+      </div>
+
+      <!-- Confirm Password -->
+      <div class="form-group">
+        <label for="confirmPassword" class="form-label">
+          <span class="label-icon">✅</span>
+          Confirmar Contraseña
+        </label>
+        <input 
+          type="password" 
+          id="confirmPassword" 
+          class="form-input" 
+          placeholder="••••••••"
+          required
+        >
+      </div>
+
+      <!-- Terms & Conditions -->
+      <div class="form-options">
+        <label class="remember-me">
+          <input type="checkbox" class="checkbox" required>
+          <span class="checkmark"></span>
+          Acepto los términos y condiciones.
+        </label>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit" class="login-button">
+        <span class="button-icon"></span>
+        Registrarse
+      </button>
+    </form>
+
+    <!-- Footer -->
+    <div class="login-footer">
+      <p>¿Ya tienes cuenta? 
+        <div class="signup-link"
+        routerLink="/auth/login"
+        routerLinkActive="active-b"
+        [routerLinkActiveOptions]="{exact: true}">
+        <span>Inicia sesión aquí</span>
+      </div>
+    </div>
+  </div>
+</div>
