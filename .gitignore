@@ -6,6 +6,18 @@
 /out-tsc
 /bazel-out
 
+.env
+.env.*
+*.env
+
+# Logs adicionales
+logs/
+*.log
+
+# Temporary directories
+/.tmp
+/.temp
+
 # Node
 /node_modules
 npm-debug.log
